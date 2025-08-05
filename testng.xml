@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="iween Test Suite" parallel="false">
+    <parameter name="os" value="Windows" />
+    <parameter name="browser" value="chrome" />
+
+    <listeners>
+        <listener class-name="com.iween.utilities.ExtentReportManager"/>
+    </listeners>
+
+    <test name="Hotel Search Tests">
+        <classes>
+        <!--class name="com.iween.testCases.TCH_01_VerifySearchFunctionalityForHotalForTwoDays"/-->
+            <class name="com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow"/>
+        </classes>
+    </test>
+</suite>
+
+
