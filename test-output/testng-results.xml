@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="3" passed="0" failed="1" skipped="0">
+<testng-results retried="1" ignored="0" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-04T18:36:01 IST" name="iween Test Suite" finished-at="2025-08-04T18:38:29 IST" duration-ms="147945">
+  <suite started-at="2025-08-05T17:44:52 IST" name="iween Test Suite" finished-at="2025-08-05T17:46:15 IST" duration-ms="83539">
     <groups>
     </groups>
-    <test started-at="2025-08-04T18:36:01 IST" name="Hotel Search Tests" finished-at="2025-08-04T18:38:29 IST" duration-ms="147945">
+    <test started-at="2025-08-05T17:44:52 IST" name="Hotel Search Tests" finished-at="2025-08-05T17:46:15 IST" duration-ms="83539">
       <class name="com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:36:02 IST" name="setup" finished-at="2025-08-04T18:36:04 IST" duration-ms="1908" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-05T17:44:52 IST" name="setup" finished-at="2025-08-05T17:44:54 IST" duration-ms="1693" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,22 +28,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:36:04 IST" name="myTest" data-provider="excelData" finished-at="2025-08-04T18:36:52 IST" duration-ms="47953" status="SKIP">
+        <test-method retried="true" signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-05T17:44:54 IST" name="myTest" data-provider="excelData" finished-at="2025-08-05T17:45:31 IST" duration-ms="36647" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
+                <![CDATA[{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Mismatch in detailed flight information.]]>
+              <![CDATA[fareAndSupplier failed: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b64bd4ce3d3785b3d39684936ac7af12, findChildElements {using=xpath, value=.//div[@class='fare-component_supplier-name'], id=f.943F8EC02A34E559B78DB78FC4BAA5A9.d.87727B5FD03E261D6175DF79E5EAC52A.e.311}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59100/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b64bd4ce3d3785b3d39684936ac7af12]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Mismatch in detailed flight information.
+              <![CDATA[java.lang.AssertionError: fareAndSupplier failed: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b64bd4ce3d3785b3d39684936ac7af12, findChildElements {using=xpath, value=.//div[@class='fare-component_supplier-name'], id=f.943F8EC02A34E559B78DB78FC4BAA5A9.d.87727B5FD03E261D6175DF79E5EAC52A.e.311}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59100/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b64bd4ce3d3785b3d39684936ac7af12
 at org.testng.Assert.fail(Assert.java:111)
-at com.iween.pageObjects.FlightDetailsPage.flightInformation(FlightDetailsPage.java:289)
+at com.iween.pageObjects.resultPage.fareAndSupplier(resultPage.java:772)
+at com.iween.pageObjects.resultPage.validateFlightDeatails(resultPage.java:481)
 at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:104)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -77,11 +94,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:36:52 IST" name="tearDown" finished-at="2025-08-04T18:36:53 IST" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-05T17:45:31 IST" name="tearDown" finished-at="2025-08-05T17:45:31 IST" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:36:53 IST" name="setup" finished-at="2025-08-04T18:36:54 IST" duration-ms="1387" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-05T17:45:31 IST" name="setup" finished-at="2025-08-05T17:45:33 IST" duration-ms="1290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,130 +119,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:36:54 IST" name="myTest" data-provider="excelData" finished-at="2025-08-04T18:37:40 IST" duration-ms="45852" status="SKIP">
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-05T17:45:33 IST" name="myTest" data-provider="excelData" finished-at="2025-08-05T17:46:15 IST" duration-ms="42294" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
+                <![CDATA[{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Mismatch in detailed flight information.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Mismatch in detailed flight information.
-at org.testng.Assert.fail(Assert.java:111)
-at com.iween.pageObjects.FlightDetailsPage.flightInformation(FlightDetailsPage.java:289)
-at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:104)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:37:40 IST" name="tearDown" finished-at="2025-08-04T18:37:40 IST" duration-ms="205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:37:40 IST" name="setup" finished-at="2025-08-04T18:37:41 IST" duration-ms="1362" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[public void com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(java.util.Map) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:37:41 IST" name="myTest" data-provider="excelData" finished-at="2025-08-04T18:38:29 IST" duration-ms="47731" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Mismatch in detailed flight information.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Mismatch in detailed flight information.
-at org.testng.Assert.fail(Assert.java:111)
-at com.iween.pageObjects.FlightDetailsPage.flightInformation(FlightDetailsPage.java:289)
-at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:104)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-04T18:38:29 IST" name="tearDown" finished-at="2025-08-04T18:38:29 IST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@4b8729ff]" started-at="2025-08-05T17:46:15 IST" name="tearDown" finished-at="2025-08-05T17:46:15 IST" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

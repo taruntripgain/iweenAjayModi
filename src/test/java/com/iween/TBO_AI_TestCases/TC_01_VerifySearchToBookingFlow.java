@@ -76,6 +76,15 @@ public class TC_01_VerifySearchToBookingFlow extends baseClass {
 		resultPage.validateResultPageIsDisplayed(test);
 		//Method to Get User Entered Value
 		Map<String, String> userDetails=resultPage.userData();
+		
+		
+		resultPage.clickOnNonStopFliter(test);
+		Thread.sleep(5000);
+		resultPage.validateStops("Non Stop",test);
+		
+		
+		
+		
 		//Method To get Avaliable Flight Displayed And Print In Report
 		resultPage.displayAvailableFlights(test);
 		//resultPage.selectAirLines("Air India",test);
@@ -98,10 +107,11 @@ public class TC_01_VerifySearchToBookingFlow extends baseClass {
 		Map<String, String>fareDetaislSelected=resultPage.clickTboFareForFlightIndex(1,test);
         
 		//Method to click On Flight Details button
-				resultPage.clickOnFlightDetails(test,1);
+		resultPage.clickOnFlightDetails(test,1);
 		Thread.sleep(2000);
 		
 		flightDetailsPage.flightInformation(userDetails,flightDetails,fareDetaislSelected,test);
+		
         System.out.println("******** Finished TestCase1: testLogin ********");
         
        

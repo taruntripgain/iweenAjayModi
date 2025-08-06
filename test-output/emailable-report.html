@@ -9,24 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">iween Test Suite</th></tr>
-<tr><td><a href="#t0">Hotel Search Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">147,945</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Hotel Search Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">83,539</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">iween Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Hotel Search Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow</td><td><a href="#m0">myTest</a></td><td rowspan="1">1754312861968</td><td rowspan="1">47731</td></tr><tr><th colspan="4">Hotel Search Tests &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow</td><td><a href="#m1">myTest</a></td><td rowspan="2">1754312814549</td><td rowspan="2">45852</td></tr><tr class="retriedeven"><td><a href="#m2">myTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">iween Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Hotel Search Tests &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow</td><td><a href="#m0">myTest</a></td><td rowspan="1">1754396094600</td><td rowspan="1">36647</td></tr><tr><th colspan="4">Hotel Search Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow</td><td><a href="#m1">myTest</a></td><td rowspan="1">1754396133155</td><td rowspan="1">42294</td></tr></tbody>
 </table>
-<h2>Hotel Search Tests</h2><h3 id="m0">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Mismatch in detailed flight information.
-	at com.iween.pageObjects.FlightDetailsPage.flightInformation(FlightDetailsPage.java:289)
+<h2>Hotel Search Tests</h2><h3 id="m0">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: fareAndSupplier failed: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b64bd4ce3d3785b3d39684936ac7af12, findChildElements {using=xpath, value=.//div[@class=&apos;fare-component_supplier-name&apos;], id=f.943F8EC02A34E559B78DB78FC4BAA5A9.d.87727B5FD03E261D6175DF79E5EAC52A.e.311}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59100/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b64bd4ce3d3785b3d39684936ac7af12
+	at com.iween.pageObjects.resultPage.fareAndSupplier(resultPage.java:772)
+	at com.iween.pageObjects.resultPage.validateFlightDeatails(resultPage.java:481)
 	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:104)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Mismatch in detailed flight information.
-	at com.iween.pageObjects.FlightDetailsPage.flightInformation(FlightDetailsPage.java:289)
-	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:104)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Mismatch in detailed flight information.
-	at com.iween.pageObjects.FlightDetailsPage.flightInformation(FlightDetailsPage.java:289)
-	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:104)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

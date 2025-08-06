@@ -8818,3 +8818,496 @@ Session ID: 65dafeb820c48be176b028fddc89669b
 2025-08-05 11:13:28 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
 2025-08-05 11:13:28 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
 2025-08-05 11:13:30 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 12:13:28 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 12:13:28 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 12:13:29 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 12:13:29 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 12:13:48 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 12:14:11 [main] DEBUG com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Debug log
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Search Flights']"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb2bec58e86edd546bec368391e0c00e, findElement {using=xpath, value=//div[text()='Search Flights']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51659}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51659/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb2bec58e86edd546bec368391e0c00e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.21.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.21.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source) ~[?:?]
+	at com.iween.pageObjects.searchFlightPage.verifyFlightSearchPageIsDisplayed(searchFlightPage.java:215) ~[test-classes/:?]
+	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:61) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-05 12:14:11 [main] ERROR com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Test failed due to exception: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Search Flights']"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb2bec58e86edd546bec368391e0c00e, findElement {using=xpath, value=//div[text()='Search Flights']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51659}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51659/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb2bec58e86edd546bec368391e0c00e
+2025-08-05 12:14:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 12:14:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 12:14:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 12:14:21 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 12:15:16 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 12:15:16 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 12:15:16 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 12:15:18 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 12:16:02 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 12:19:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 12:19:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 12:19:08 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 12:19:08 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 12:19:10 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 12:19:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:01:16 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:01:16 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:01:16 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:01:16 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:01:18 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:01:49 [main] DEBUG com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Debug log
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98232c1856b7d7522d8c6e0a0a99c73a, getElementText {id=f.30D5E87127D6BCA5822F85DFBFCBC915.d.1E591E5A2396FC29DB6C1A36F4785CE0.e.322}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53535/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (98232c1856b7d7522d8c6e0a0a99c73a)] -> xpath: //*[contains(@class,'fs-8')]]
+Session ID: 98232c1856b7d7522d8c6e0a0a99c73a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191) ~[selenium-remote-driver-4.21.0.jar:?]
+	at com.iween.pageObjects.resultPage.validateStops(resultPage.java:1000) ~[test-classes/:?]
+	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:82) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-05 13:01:49 [main] ERROR com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Test failed due to exception: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98232c1856b7d7522d8c6e0a0a99c73a, getElementText {id=f.30D5E87127D6BCA5822F85DFBFCBC915.d.1E591E5A2396FC29DB6C1A36F4785CE0.e.322}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53535/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (98232c1856b7d7522d8c6e0a0a99c73a)] -> xpath: //*[contains(@class,'fs-8')]]
+Session ID: 98232c1856b7d7522d8c6e0a0a99c73a
+2025-08-05 13:01:49 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:01:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:01:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:01:51 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:02:22 [main] DEBUG com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Debug log
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98c8a41b454284cc2e3c2ed979ed35f6, getElementText {id=f.9923A281514F039FD568DDAF5CBB754A.d.07A1258020BE4DCAE8D037E73FD247D6.e.325}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53595/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (98c8a41b454284cc2e3c2ed979ed35f6)] -> xpath: //*[contains(@class,'fs-8')]]
+Session ID: 98c8a41b454284cc2e3c2ed979ed35f6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191) ~[selenium-remote-driver-4.21.0.jar:?]
+	at com.iween.pageObjects.resultPage.validateStops(resultPage.java:1000) ~[test-classes/:?]
+	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:82) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-05 13:02:22 [main] ERROR com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Test failed due to exception: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98c8a41b454284cc2e3c2ed979ed35f6, getElementText {id=f.9923A281514F039FD568DDAF5CBB754A.d.07A1258020BE4DCAE8D037E73FD247D6.e.325}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53595/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (98c8a41b454284cc2e3c2ed979ed35f6)] -> xpath: //*[contains(@class,'fs-8')]]
+Session ID: 98c8a41b454284cc2e3c2ed979ed35f6
+2025-08-05 13:02:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:02:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:02:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:02:24 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:02:54 [main] DEBUG com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Debug log
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61a89360144d25cc4b673f33ee77eda3, getElementText {id=f.3FDABAC373F551493AECF7F26649EEC1.d.9BDB250B463096E28677640C5AD7D3E6.e.327}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53656/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (61a89360144d25cc4b673f33ee77eda3)] -> xpath: //*[contains(@class,'fs-8')]]
+Session ID: 61a89360144d25cc4b673f33ee77eda3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191) ~[selenium-remote-driver-4.21.0.jar:?]
+	at com.iween.pageObjects.resultPage.validateStops(resultPage.java:1000) ~[test-classes/:?]
+	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:82) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-05 13:02:54 [main] ERROR com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Test failed due to exception: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61a89360144d25cc4b673f33ee77eda3, getElementText {id=f.3FDABAC373F551493AECF7F26649EEC1.d.9BDB250B463096E28677640C5AD7D3E6.e.327}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53656/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (61a89360144d25cc4b673f33ee77eda3)] -> xpath: //*[contains(@class,'fs-8')]]
+Session ID: 61a89360144d25cc4b673f33ee77eda3
+2025-08-05 13:02:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:07:15 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:07:15 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:07:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:07:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:07:17 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:07:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:07:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:07:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:07:51 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:08:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:08:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:08:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:08:24 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:08:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:13:26 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:13:26 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:13:26 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:13:26 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:13:28 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:14:00 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:14:00 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:14:00 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:14:02 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:14:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:14:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:14:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:14:35 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:15:08 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:15:56 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:15:56 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:15:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:15:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:15:59 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:17:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:17:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:17:31 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:17:31 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:17:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:18:21 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:18:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:18:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:18:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:18:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:18:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:18:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:18:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:19:27 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:21:20 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:21:20 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:21:20 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:21:20 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:21:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:22:21 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:22:21 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:22:21 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:22:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:23:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:23:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:23:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:23:24 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:24:24 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:28:03 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:28:03 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:28:03 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:28:03 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:28:05 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:38:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 13:38:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 13:38:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:38:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:38:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:39:40 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:39:40 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:39:40 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:39:41 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:40:13 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 13:40:13 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 13:40:13 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 13:40:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 13:40:47 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 15:11:24 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 15:11:24 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 15:11:24 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:11:24 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:11:27 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:12:00 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 15:12:01 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:12:01 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:12:02 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:12:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 15:12:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 15:12:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:12:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:13:00 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:13:34 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 15:13:35 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:13:35 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:13:36 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:14:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 15:14:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 15:14:27 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:14:27 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:14:53 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:14:55 [main] DEBUG com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Debug log
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.184)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bcf68cc024b502e76e85011ff6c8da0, findElement {value=//div[text()='Search Flights'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55818/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bcf68cc024b502e76e85011ff6c8da0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.21.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.21.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source) ~[?:?]
+	at com.iween.pageObjects.searchFlightPage.verifyFlightSearchPageIsDisplayed(searchFlightPage.java:215) ~[test-classes/:?]
+	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:61) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-05 15:14:55 [main] ERROR com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Test failed due to exception: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.184)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bcf68cc024b502e76e85011ff6c8da0, findElement {value=//div[text()='Search Flights'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55818/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bcf68cc024b502e76e85011ff6c8da0
+2025-08-05 15:14:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 15:14:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:14:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:15:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 15:15:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 15:15:06 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:15:06 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:15:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:15:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 15:15:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:15:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:15:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:19:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 15:19:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 15:19:30 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:19:30 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:19:32 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:24:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 15:24:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 15:24:08 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 15:24:08 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 15:24:10 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 15:24:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 16:46:48 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 16:46:48 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 16:46:48 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 16:46:48 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 16:46:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 16:47:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 16:50:59 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 16:50:59 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 16:50:59 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 16:50:59 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 16:51:01 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 16:51:43 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 17:44:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-05 17:44:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-05 17:44:52 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 17:44:52 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 17:44:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 17:45:31 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-05 17:45:31 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-05 17:45:31 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-05 17:45:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-05 17:46:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.

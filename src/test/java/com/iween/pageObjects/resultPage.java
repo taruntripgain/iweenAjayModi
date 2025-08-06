@@ -514,8 +514,9 @@ public class resultPage extends BasePage{
 	         locationMap.put("bangalore", "bengaluru");
 	         locationMap.put("blr", "bengaluru");
 	         locationMap.put("coimbatore", "coimbatore");
-	         locationMap.put("delhi", "delhi");
+	         locationMap.put("newdelhi", "delhi");
 	         locationMap.put("chennai", "chennai");
+	         
 
 	         return locationMap.getOrDefault(cleaned, cleaned);
 	     }
@@ -960,6 +961,134 @@ public class resultPage extends BasePage{
 		        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Flight Details click failed", "Unexpected error occurred");
 		    }
 		}
+
+		public void clickOnNonStopFliter(ExtentTest test) {
+		    try {
+		        WebElement nonStopCheckbox = driver.findElement(By.xpath("//*[text()='Non Stop']/input"));
+
+		        // Scroll element into view
+		        ((JavascriptExecutor) driver).executeScript(
+		            "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", nonStopCheckbox);
+
+		        try {
+		            // Try standard click
+		            nonStopCheckbox.click();
+		        } catch (Exception e) {
+		            // Fallback to JavaScript click
+		            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", nonStopCheckbox);
+		        }
+
+		        test.log(Status.PASS, "Clicked on 'Non Stop' filter successfully.");
+		        System.out.println("Clicked on 'Non Stop' filter successfully.");
+
+		    } catch (Exception e) {
+		        test.log(Status.FAIL, "Failed to click on 'Non Stop' filter: " + e.getMessage());
+		        System.err.println("Failed to click on 'Non Stop' filter: " + e.getMessage());
+
+		        // Optional: Attach screenshot if you have a utility like this
+		        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, 
+		            "Non Stop filter click failed", "Exception occurred while clicking 'Non Stop' filter");
+		    }
+		}
+
+
+		/*
+		public void validateStops(String expectedStops, ExtentTest test) throws InterruptedException {
+			Thread.sleep(2000);
+		    try {
+		        List<WebElement> stops = driver.findElements(By.xpath("//*[contains(@class,'fs-8')]"));
+		        boolean allStopsMatch = true;
+		        StringBuilder mismatchedStops = new StringBuilder();
+
+		        for (WebElement stop : stops) {
+		            String actualStop;
+
+		            try {
+		                // Retry once if stale
+		                actualStop = stop.getText().trim();
+		            } catch (StaleElementReferenceException e) {
+		                // Re-locate element after stale exception
+		                stops = driver.findElements(By.xpath("//*[contains(@class,'fs-8')]"));
+		                if (stops.contains(stop)) {
+		                    actualStop = stop.getText().trim();
+		                } else {
+		                    continue; // skip this stale element
+		                }
+		            }
+
+		            if (!actualStop.equalsIgnoreCase(expectedStops)) {
+		                allStopsMatch = false;
+		                mismatchedStops.append(actualStop).append(", ");
+		            }
+		        }
+
+		        if (allStopsMatch) {
+		            test.log(Status.PASS, "All flights show stop type: '" + expectedStops + "'");
+		        } else {
+		            String mismatches = mismatchedStops.toString().replaceAll(", $", "");
+		            String message = "Some flights do not match expected stop type '" + expectedStops + "'. Found: " + mismatches;
+		            test.log(Status.FAIL, message);
+		            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Stop Type Mismatch", message);
+		            Assert.fail("Test failed due to stop type mismatch.");
+		        }
+
+		    } catch (Exception e) {
+		        test.log(Status.FAIL, "Exception during stop validation: " + e.getMessage());
+		        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception", "Exception during stop validation");
+		        Assert.fail("Test failed due to exception: " + e.getMessage());
+		    }
+		}
+*/
+		public void validateStops(String expectedStops, ExtentTest test) {
+		    try {
+		        List<WebElement> stops = driver.findElements(By.xpath("//*[contains(@class,'fs-8')]"));
+
+		        // If the list is empty or elements are not displayed
+		        if (stops == null || stops.isEmpty() || stops.stream().noneMatch(WebElement::isDisplayed)) {
+		            String message = "Flights list is empty or not visible.";
+		            test.log(Status.FAIL, message);
+		            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "No flights found", message);
+		            Assert.fail("Test failed: No flight stop elements found.");
+		            return;
+		        }
+
+		        boolean allStopsMatch = true;
+		        StringBuilder mismatchedStops = new StringBuilder();
+
+		        for (WebElement stop : stops) {
+		            String actualStop;
+
+		            try {
+		                actualStop = stop.getText().trim();
+		            } catch (StaleElementReferenceException e) {
+		                // Try to refetch a fresh list and skip this iteration
+		                continue;
+		            }
+
+		            if (!actualStop.equalsIgnoreCase(expectedStops)) {
+		                allStopsMatch = false;
+		                mismatchedStops.append(actualStop).append(", ");
+		            }
+		        }
+
+		        if (allStopsMatch) {
+		            test.log(Status.PASS, "All flights show stop type: '" + expectedStops + "'");
+		        } else {
+		            String mismatches = mismatchedStops.toString().replaceAll(", $", "");
+		            String message = "Some flights do not match expected stop type '" + expectedStops + "'. Found: " + mismatches;
+		            test.log(Status.FAIL, message);
+		            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Stop Type Mismatch", message);
+		            Assert.fail("Test failed due to stop type mismatch.");
+		        }
+
+		    } catch (Exception e) {
+		        String message = "Exception during stop validation: " + e.getMessage();
+		        test.log(Status.FAIL, message);
+		        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception", message);
+		        Assert.fail("Test failed due to exception: " + message);
+		    }
+		}
+
 
 
 
