@@ -9311,3 +9311,210 @@ Session ID: 9bcf68cc024b502e76e85011ff6c8da0
 2025-08-05 17:45:31 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
 2025-08-05 17:45:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
 2025-08-05 17:46:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-06 21:20:23 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-06 21:20:23 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-06 21:20:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-06 21:20:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-06 21:20:26 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-06 21:20:53 [main] DEBUG com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Debug log
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Search Flights']"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb63a14fabee16858b920ab6a53dfdca, findElement {using=xpath, value=//div[text()='Search Flights']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58946/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb63a14fabee16858b920ab6a53dfdca
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.21.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.21.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source) ~[?:?]
+	at com.iween.pageObjects.searchFlightPage.verifyFlightSearchPageIsDisplayed(searchFlightPage.java:215) ~[test-classes/:?]
+	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:61) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-06 21:20:53 [main] ERROR com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Test failed due to exception: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Search Flights']"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb63a14fabee16858b920ab6a53dfdca, findElement {using=xpath, value=//div[text()='Search Flights']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58946/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb63a14fabee16858b920ab6a53dfdca
+2025-08-06 21:20:53 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-06 21:20:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-06 21:20:54 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-06 21:21:02 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-06 21:22:35 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 11:06:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 11:06:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 11:06:07 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 11:06:07 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 11:06:09 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 11:07:10 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 11:07:10 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 11:07:10 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 11:07:12 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 13:37:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 13:37:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 13:37:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 13:37:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 13:41:48 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 13:41:48 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 13:41:48 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 13:41:48 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 13:41:50 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 13:43:20 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 13:43:20 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 13:43:20 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 13:43:21 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 13:44:49 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 13:44:49 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 13:44:49 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 13:44:51 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 13:46:27 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 13:48:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 13:48:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 13:48:28 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 13:48:28 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 13:48:29 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 17:55:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 17:55:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 17:55:45 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 17:55:45 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 17:55:48 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 17:56:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 17:56:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 17:56:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 17:56:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 17:57:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 17:57:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 17:57:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 17:57:16 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 17:58:19 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-07 18:01:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 18:01:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 18:01:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 18:01:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 18:02:01 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 18:08:01 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 18:08:01 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 18:08:02 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 18:08:02 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 18:08:19 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 18:33:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 18:33:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 18:33:30 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 18:33:30 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 18:34:09 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 18:40:09 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 18:40:09 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 18:40:09 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 18:40:09 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 18:40:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 18:45:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 18:45:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-07 18:45:27 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-07 18:45:27 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-07 18:45:32 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-07 18:46:45 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 11:38:11 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 11:38:11 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 11:38:12 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 11:38:12 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 11:38:16 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 11:44:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 11:44:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 11:44:44 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 11:44:44 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 11:44:46 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 11:44:49 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 11:57:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 11:57:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 11:57:30 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 11:57:30 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 11:57:32 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 11:57:34 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 12:00:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 12:00:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 12:00:19 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 12:00:19 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 12:00:21 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 12:00:23 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 12:11:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 12:11:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 12:11:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 12:11:55 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 12:11:57 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 12:11:57 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 12:11:57 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 12:11:57 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 12:11:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 12:11:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 12:11:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 12:11:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 12:12:00 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 12:12:00 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 12:13:11 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 12:13:11 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 12:13:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 12:13:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 12:13:13 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 12:13:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 12:16:10 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 12:16:10 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 12:16:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 12:16:11 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 12:16:12 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 12:16:15 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 17:12:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 17:12:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 17:12:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 17:12:22 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 17:12:25 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 17:13:33 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.
+2025-08-08 17:35:56 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-08 17:35:56 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-08 17:35:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Operating System: Windows
+2025-08-08 17:35:56 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser: chrome
+2025-08-08 17:35:58 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Browser launched and navigated to URL: https://air.ajaymodi.pro/login
+2025-08-08 17:37:06 [main] INFO  com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow - Closing browser.

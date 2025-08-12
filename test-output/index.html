@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-iween_Test_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">iween Test Suite</span>
+              <span class="suite-name border-passed">iween Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-iween_Test_Suite" class="hide-methods skipped suite-iween_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-iween_Test_Suite -->
-                      <a href="#" panel-name="suite-iween_Test_Suite" class="show-methods skipped suite-iween_Test_Suite"> (show)</a> <!-- show-methods skipped suite-iween_Test_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-iween_Test_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-iween_Test_Suite" title="com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow" class="method navigator-link" hash-for-method="myTest({Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1})">myTest({Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-iween_Test_Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -132,37 +118,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-iween_Test_Suite" class="panel iween_Test_Suite">
-          <div class="suite-iween_Test_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="myTest({Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1})">
-                  </a> <!-- myTest({Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}) -->
-                  <span class="method-name">myTest</span>
-                  <span class="parameters">({Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1})</span>
-                  <div class="stack-trace">java.lang.AssertionError: fareAndSupplier failed: stale element reference: stale element not found in the current frame
-  (Session info: chrome=138.0.7204.184)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b64bd4ce3d3785b3d39684936ac7af12, findChildElements {using=xpath, value=.//div[@class=&apos;fare-component_supplier-name&apos;], id=f.943F8EC02A34E559B78DB78FC4BAA5A9.d.87727B5FD03E261D6175DF79E5EAC52A.e.311}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59100}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59100/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b64bd4ce3d3785b3d39684936ac7af12
-	at com.iween.pageObjects.resultPage.fareAndSupplier(resultPage.java:772)
-	at com.iween.pageObjects.resultPage.validateFlightDeatails(resultPage.java:481)
-	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:104)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-iween_Test_Suite-class-skipped -->
           <div class="suite-iween_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -236,15 +191,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'myTest')
 data.setCell(0, 2, 'com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow')
-data.setCell(0, 3, 42294);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'myTest')
-data.setCell(1, 2, 'com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow')
-data.setCell(1, 3, 36647);
+data.setCell(0, 3, 68122);
 window.suiteTableData['iween_Test_Suite']= { tableData: data, tableDiv: 'times-div-iween_Test_Suite'}
 return data;
 }
@@ -282,24 +233,16 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">myTest({Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1})</span>
-                <span class="method-start">1695 ms</span>
+                <span class="method-start">2072 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38346 ms</span>
+                <span class="method-start">70210 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(Windows, chrome, public void com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(java....)</span>
-                <span class="method-start">38960 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">myTest({Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1})</span>
-                <span class="method-start">40250 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">82545 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">71109 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

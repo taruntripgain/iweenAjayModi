@@ -1,10 +1,16 @@
 package com.iween.pageObjects;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeoutException;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -15,10 +21,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import java.nio.file.Files;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
 import com.iween.utilities.ScreenshotUtil;
+
+
+
 
 public class searchFlightPage extends BasePage {
 
@@ -224,7 +235,8 @@ public class searchFlightPage extends BasePage {
             Assert.fail();
 		}
 	}
-
+	
+	
 	//Method to select City.
 		public void location(String location) throws TimeoutException {
 			try {
@@ -334,7 +346,33 @@ public class searchFlightPage extends BasePage {
 			return dp[a.length()][b.length()];
 		}
 
-		
+		public static void logFullPageSourceToReport(WebDriver driver, ExtentTest test) {
+	        try {
+	            // Get raw page source
+	            String rawHtml = driver.getPageSource();
 
+	            // Parse and pretty format using Jsoup (optional)
+	            Document doc = Jsoup.parse(rawHtml);
+	            String prettyHtml = doc.outerHtml();
+
+	            // Escape HTML entities to show code properly inside the report
+	            String escapedHtml = prettyHtml
+	                .replace("&", "&amp;")
+	                .replace("<", "&lt;")
+	                .replace(">", "&gt;")
+	                .replace("\"", "&quot;")
+	                .replace("'", "&#39;");
+
+	            // Log inside report wrapped in a <pre> block for formatting
+	            String htmlBlock = "<pre style='white-space: pre-wrap; max-height:400px; overflow:auto; border:1px solid #ccc; padding:10px;'>" 
+	                + escapedHtml + "</pre>";
+
+	            test.log(Status.INFO, "Full Page Source HTML:\n" + htmlBlock);
+
+	        } catch (Exception e) {
+	            test.log(Status.FAIL, "Error logging full page source: " + e.getMessage());
+	            e.printStackTrace();
+	        }
+	    }
 
 }

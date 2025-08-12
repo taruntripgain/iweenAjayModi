@@ -1,12 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 111.9 s <<< FAILURE! -- in TestSuite
-com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest[{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}](3) -- Time elapsed: 33.81 s <<< FAILURE!
-java.lang.AssertionError: Flight search details did not match user input.
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.iween.pageObjects.resultPage.validateFlightDeatails(resultPage.java:406)
-	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:89)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 6.531 s <<< FAILURE! -- in TestSuite
+com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest[{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}](3) -- Time elapsed: 0.015 s <<< FAILURE!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method captureAndLogPageSource(ExtentTest) is undefined for the type searchFlightPage
+
+	at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:63)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

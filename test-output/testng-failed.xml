@@ -11,8 +11,8 @@
       <class name="com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow">
         <methods>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="myTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow -->
     </classes>

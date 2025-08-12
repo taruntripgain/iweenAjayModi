@@ -2,12 +2,12 @@
 <testng-results retried="2" ignored="2" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-04T12:11:15 IST" name="iween Test Suite" finished-at="2025-08-04T12:13:06 IST" duration-ms="111076">
+  <suite started-at="2025-08-08T12:11:54 IST" name="iween Test Suite" finished-at="2025-08-08T12:12:00 IST" duration-ms="5862">
     <groups>
     </groups>
-    <test started-at="2025-08-04T12:11:15 IST" name="Hotel Search Tests" finished-at="2025-08-04T12:13:06 IST" duration-ms="111076">
+    <test started-at="2025-08-08T12:11:54 IST" name="Hotel Search Tests" finished-at="2025-08-08T12:12:00 IST" duration-ms="5862">
       <class name="com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:11:16 IST" name="setup" finished-at="2025-08-04T12:11:19 IST" duration-ms="2601" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:11:55 IST" name="setup" finished-at="2025-08-08T12:11:57 IST" duration-ms="1707" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,23 +28,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:11:19 IST" name="myTest" data-provider="excelData" finished-at="2025-08-04T12:11:54 IST" duration-ms="35443" status="SKIP">
+        <test-method retried="true" signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:11:57 IST" name="myTest" data-provider="excelData" finished-at="2025-08-08T12:11:57 IST" duration-ms="6" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
+                <![CDATA[{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Flight search details did not match user input.]]>
+              <![CDATA[Unresolved compilation problem: 
+The method captureAndLogPageSource(ExtentTest) is undefined for the type searchFlightPage
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Flight search details did not match user input.
-at org.testng.Assert.fail(Assert.java:111)
-at com.iween.pageObjects.resultPage.validateFlightDeatails(resultPage.java:406)
-at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:89)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method captureAndLogPageSource(ExtentTest) is undefined for the type searchFlightPage
+
+at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:63)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -77,15 +79,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:11:54 IST" name="tearDown" finished-at="2025-08-04T12:11:54 IST" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:11:57 IST" name="tearDown" finished-at="2025-08-08T12:11:57 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:11:54 IST" name="setup" finished-at="2025-08-04T12:11:56 IST" duration-ms="1241" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:11:57 IST" name="setup" finished-at="2025-08-08T12:11:58 IST" duration-ms="1413" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,23 +108,25 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:11:56 IST" name="myTest" data-provider="excelData" finished-at="2025-08-04T12:12:31 IST" duration-ms="34847" status="SKIP">
+        <test-method retried="true" signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:11:58 IST" name="myTest" data-provider="excelData" finished-at="2025-08-08T12:11:58 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
+                <![CDATA[{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Flight search details did not match user input.]]>
+              <![CDATA[Unresolved compilation problem: 
+The method captureAndLogPageSource(ExtentTest) is undefined for the type searchFlightPage
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Flight search details did not match user input.
-at org.testng.Assert.fail(Assert.java:111)
-at com.iween.pageObjects.resultPage.validateFlightDeatails(resultPage.java:406)
-at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:89)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method captureAndLogPageSource(ExtentTest) is undefined for the type searchFlightPage
+
+at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:63)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -155,15 +159,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:12:31 IST" name="tearDown" finished-at="2025-08-04T12:12:31 IST" duration-ms="297" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:11:58 IST" name="tearDown" finished-at="2025-08-08T12:11:58 IST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:12:31 IST" name="setup" finished-at="2025-08-04T12:12:32 IST" duration-ms="1323" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:11:58 IST" name="setup" finished-at="2025-08-08T12:12:00 IST" duration-ms="1339" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,23 +188,25 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:12:32 IST" name="myTest" data-provider="excelData" finished-at="2025-08-04T12:13:06 IST" duration-ms="33804" status="FAIL">
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:12:00 IST" name="myTest" data-provider="excelData" finished-at="2025-08-08T12:12:00 IST" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Going To=CJB, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
+                <![CDATA[{Going To=DEL, AdultsCounts=1, InfantsCount=1, Class=Economy, Depart From=AMD, ChildrenCount=1}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Flight search details did not match user input.]]>
+              <![CDATA[Unresolved compilation problem: 
+The method captureAndLogPageSource(ExtentTest) is undefined for the type searchFlightPage
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Flight search details did not match user input.
-at org.testng.Assert.fail(Assert.java:111)
-at com.iween.pageObjects.resultPage.validateFlightDeatails(resultPage.java:406)
-at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:89)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method captureAndLogPageSource(ExtentTest) is undefined for the type searchFlightPage
+
+at com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow.myTest(TC_01_VerifySearchToBookingFlow.java:63)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -233,11 +239,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@533bda92]" started-at="2025-08-04T12:13:06 IST" name="tearDown" finished-at="2025-08-04T12:13:06 IST" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.TBO_AI_TestCases.TC_01_VerifySearchToBookingFlow@723ca036]" started-at="2025-08-08T12:12:00 IST" name="tearDown" finished-at="2025-08-08T12:12:00 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

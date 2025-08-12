@@ -309,6 +309,16 @@ public class resultPage extends BasePage{
 		    try {
 		        WebElement flightCard = driver.findElement(By.xpath("(//*[contains(@class,'one-way-new-result-card')])[" + index + "]"));
 		        
+		        
+		        String fullText = flightCard.findElement(
+		        	    By.xpath("(.//*[contains(@class,'title fw-600')])[2]")
+		        	).getText();  // e.g., "00:10+1" or "00:10"
+
+		        	String timeOnly = fullText.split("\\+")[0].trim();  // ✅ Safely extract just the time
+
+		        	System.out.println("Arrival Time: " + timeOnly);  // Output: 00:10
+
+		        
 		        // Scroll flight card into view before extracting details
 		        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior:'smooth', block:'center'});", flightCard);
 
@@ -320,7 +330,7 @@ public class resultPage extends BasePage{
 		        flightDetails.put("fromLocation", flightCard.findElement(By.xpath("(.//*[contains(@class,'fs-10')])[2]")).getText());
 		        flightDetails.put("duration", flightCard.findElement(By.xpath(".//*[contains(@class,'fs-12 fw-500')]")).getText());
 		        flightDetails.put("stops", flightCard.findElement(By.xpath(".//*[contains(@class,'fs-8')]")).getText());
-		        flightDetails.put("arrivalTime", flightCard.findElement(By.xpath("(.//*[contains(@class,'title fw-600')])[2]")).getText());
+		        flightDetails.put("arrivalTime", timeOnly);
 		        flightDetails.put("arrivalDate", flightCard.findElement(By.xpath("(.//*[contains(@class,'fs-12')])[3]")).getText());
 		        flightDetails.put("destinationLocation", flightCard.findElement(By.xpath("(.//*[contains(@class,'fs-10')])[3]")).getText());
 
@@ -706,6 +716,7 @@ public class resultPage extends BasePage{
 		    }
 		}
 		*/
+	 //method to validate supplier fare and price having any duplicates
 		public void fareAndSupplier(int index, ExtentTest test) {
 		    try {
 		        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -736,7 +747,7 @@ public class resultPage extends BasePage{
 		        List<WebElement> prices = fareInfoCard.findElements(By.xpath(".//*[contains(@class,'fs-16 fw-600')]"));
 
 		        // To track duplicates for each supplier
-		        Map<String, Set<String>> supplierFareSet = new HashMap<>();
+		        Map<String, Set<String>> supplierFareSet = new HashMap<>();//here in key it will store supplier name and  Set<String> it will fare name and price
 
 		        for (int i = 0; i < suppliers.size(); i++) {
 		            String supplier = (i < suppliers.size()) ? suppliers.get(i).getText().trim() : "Unknown Supplier";
@@ -749,8 +760,11 @@ public class resultPage extends BasePage{
 		            test.log(Status.INFO, "Supplier: " + supplier + " | Fare: " + fare + " | Price: " + price);
 
 		            // Initialize fare set for supplier if not present
-		            supplierFareSet.putIfAbsent(supplier, new HashSet<>());
-
+		            supplierFareSet.putIfAbsent(supplier, new HashSet<>()); // putIfAbsent(key, value) is a method of the Map interface that:Checks if the key (supplier) is already in the map.
+                                                                           //If not present, it adds the key with the given value (here, a new empty HashSet).
+                                                                            //If already present, it does nothing (does not overwrite the existing value)....
+		                                                                    //and here in new HashSet<>() we storing the value it will allow only unique no duplicate and supplier will store key
+      
 		            // Validate duplicates (allowed only for "Fare Coupons")
 		            if (!fare.equalsIgnoreCase("Fare Coupons")) {
 		                if (supplierFareSet.get(supplier).contains(fareKey)) {
@@ -911,7 +925,7 @@ public class resultPage extends BasePage{
 		        fareDetails.put("Price", getSafeTextFromXPath(selectedFare, ".//span[contains(@class,'fs-16')]"));
 		        fareDetails.put("Supplier", getSafeTextFromXPath(selectedFare, ".//div[contains(@class,'fare-component_supplier-name')]"));
 		        fareDetails.put("Seats Left", getSafeTextFromXPath(selectedFare, ".//span[@class='seats-left_text']"));
-		        fareDetails.put("Cabin Baggage", getSafeTextFromXPath(selectedFare, ".//span[contains(@class,'cabin-baggage')]//span[@class='seats-left_text']"));
+		        fareDetails.put("Cabin Baggage", getSafeTextFromXPath(selectedFare, ".//span[contains(@class,'baggageinfo')]"));
 		        fareDetails.put("Refundable", getSafeTextFromXPath(selectedFare, ".//span[contains(@class,'refundable-info')]"));
 
 		        test.log(Status.PASS, "TBO fare selected for index " + index + ": " + fareDetails);

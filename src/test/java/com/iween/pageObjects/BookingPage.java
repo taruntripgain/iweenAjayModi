@@ -71,6 +71,7 @@ public class BookingPage extends BasePage {
 		System.out.println(departLocationnText);
 		String[] departLocationTextt = departLocationnText.split("-");
 		String DepartLocation = departLocationTextt[0].trim();
+		
 		System.out.println(DepartLocation);
 
 		String[] departTerminalTextt = departLocationText.split("-");

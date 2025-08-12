@@ -24,7 +24,7 @@ public class ExtentReportManager extends baseClass implements ITestListener {
 
 	    @Override
 	    public void onTestStart(ITestResult result) {
-	    	//This will get the @test methods Only class name
+	    	//This will get the @test methods Only class name to enter name in report
 	        ExtentTest test = extent.createTest(result.getTestClass().getRealClass().getSimpleName());
 	        ExtentManager.setTest(test);
 	       

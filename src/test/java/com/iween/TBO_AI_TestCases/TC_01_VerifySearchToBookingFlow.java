@@ -59,7 +59,10 @@ public class TC_01_VerifySearchToBookingFlow extends baseClass {
         loginPage.UserLogin(p.getProperty("username"),p.getProperty("password"));
         
         search.verifyFlightSearchPageIsDisplayed(test);
-
+       
+      
+        
+        
         //Method to Search The Flight
         search.searchFightsOnHomePage(departFrom,goingTo,date2.day,fromMonthYear,adultsCounts,childCount,infantsCount);
 
@@ -111,6 +114,14 @@ public class TC_01_VerifySearchToBookingFlow extends baseClass {
 		Thread.sleep(2000);
 		
 		flightDetailsPage.flightInformation(userDetails,flightDetails,fareDetaislSelected,test);
+		Map<String, String> flightDetailNonStop=flightDetailsPage.getFlightDetailsForNonStop();
+		flightDetailsPage.clickOnFareBreakUp(test);
+		flightDetailsPage.validateFareBreakUpPage(test);
+		flightDetailsPage.validateFareBreakUpPagePrice(fareDetaislSelected,test);
+		flightDetailsPage.clickOnBaggage(test);
+		flightDetailsPage.validateBaggagePage(test);
+		flightDetailsPage.validateBaggage(fareDetaislSelected,test);
+		
 		
         System.out.println("******** Finished TestCase1: testLogin ********");
         

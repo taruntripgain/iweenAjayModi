@@ -1,6 +1,7 @@
 package com.iween.pageObjects;
 
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -470,7 +471,7 @@ public class FlightDetailsPage extends BasePage{
             String toLocation = userDetails.get("toLocation");
             String expectedDepartDate = flightDetail.get("departureDate");
            String cabinDetails= fareDetailSelected.get("Cabin Baggage");
-           
+           System.out.println(cabinDetails);
 
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             By flightDetailsLocator = By.xpath("//*[@class='selected-flight-details__trip-details']");
@@ -628,6 +629,358 @@ public class FlightDetailsPage extends BasePage{
         return date.replaceAll(",\\s*\\d{4}", "").trim();
     }
 
-     
+    
+    
+    public Map<String, String> getFlightDetailsForNonStop() {
+        Map<String, String> flightDetails = new HashMap<>();
+
+        try {
+            flightDetails.put("HeaderDetails", driver.findElement(By.xpath("//div[contains(@class,'selected-flight-details__trip-details')]")).getText());
+            flightDetails.put("FlightName", driver.findElement(By.xpath("//*[@class='primary-color']")).getText());
+            flightDetails.put("FlightCode", driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[1]")).getText());
+            flightDetails.put("BookingClass", driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[2]")).getText());
+            flightDetails.put("Fare", driver.findElement(By.xpath("(//*[@class='primary-color']/parent::div/following-sibling::div)[1]")).getText());
+            flightDetails.put("TravelClass", driver.findElement(By.xpath("(//*[@class='primary-color']/parent::div/following-sibling::div)[2]")).getText());
+            flightDetails.put("Origin", driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[1]")).getText());
+            flightDetails.put("Destination", driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[2]")).getText());
+            flightDetails.put("OriginLocation", driver.findElement(By.xpath("//*[@class='fs-10 mb-2']")).getText());
+            flightDetails.put("DestinationLocation", driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[2]/following-sibling::span")).getText());
+            flightDetails.put("Duration", driver.findElement(By.xpath("//*[@class='fs-12 grey-color mb-2']")).getText());
+            flightDetails.put("Baggage", driver.findElement(By.xpath("//*[@class='selected-flight-details__flight-leg_amenities']/span")).getText());
+
+        } catch (Exception e) {
+            System.out.println("Error while fetching flight details: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        return flightDetails;
+    }
+    
+    public void clickOnFareBreakUp(ExtentTest test) {
+        try {
+            WebElement fareBreakUpTab = driver.findElement(By.xpath("//*[text()='Fare Breakup']"));
+            
+            if (fareBreakUpTab.isDisplayed() && fareBreakUpTab.isEnabled()) {
+                fareBreakUpTab.click();
+                test.log(Status.INFO, "Clicked on Fare Break Up Tab");
+            } else {
+                test.log(Status.FAIL, "Fare Breakup tab is not displayed or not clickable.");
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Element not interactable", "Fare Breakup tab issue.");
+            }
+            
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while clicking on Fare Breakup tab: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while checking flight details.");
+            e.printStackTrace();
+        }
+    }
+
+    public void validateFareBreakUpPage(ExtentTest test) {
+        try {
+            WebElement fareBreakup = driver.findElement(By.xpath("//*[@class='fare-breakup_header']"));
+            
+            if (fareBreakup.isDisplayed()) {
+                test.log(Status.INFO, "Fare Break Up is displayed successfully.");
+            } else {
+                test.log(Status.FAIL, "Fare Break Up section is not visible.");
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Element not visible", "Fare Breakup section is not displayed.");
+            }
+            
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while validating Fare Break Up page: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while validating Fare Breakup page.");
+            e.printStackTrace();
+        }
+    }
+
+    public void validateFareBreakUpPagePrice(Map<String, String> fareDetails, ExtentTest test) {
+        try {
+            String farePrice = fareDetails.get("Price");
+            String grandTotal = driver.findElement(By.xpath("//*[text()='Grand Total']/following-sibling::div")).getText();
+
+            if (grandTotal.equalsIgnoreCase(farePrice)) {
+                test.log(Status.PASS, "User selected fare price matches: " + grandTotal);
+            } else {
+                test.log(Status.FAIL, "Fare price mismatch. Expected: " + farePrice + ", Found: " + grandTotal);
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Price mismatch", "Fare price does not match Grand Total.");
+            }
+
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while validating fare breakup price: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while comparing fare price.");
+            e.printStackTrace();
+        }
+    }
+  
+    public void clickOnBaggage(ExtentTest test) {
+        try {
+            WebElement baggage = driver.findElement(By.xpath("//*[text()='Baggage']"));
+            
+            if (baggage.isDisplayed() && baggage.isEnabled()) {
+            	baggage.click();
+                test.log(Status.INFO, "Clicked on Baggage Tab");
+            } else {
+                test.log(Status.FAIL, "Baggage Tab is not displayed or not clickable.");
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Element not interactable", "Baggage Tab issue.");
+            }
+            
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while clicking on Baggage Tab: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while checking Baggage Tab.");
+            e.printStackTrace();
+        }
+    }
+    
+    public void validateBaggagePage(ExtentTest test) {
+        try {
+            WebElement baggage = driver.findElement(By.xpath("//*[@class='baggage-table_value']"));
+            
+            if (baggage.isDisplayed()) {
+                test.log(Status.INFO, "baggage page  is displayed successfully.");
+            } else {
+                test.log(Status.FAIL, "baggage page section is not visible.");
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Element not visible", "baggage page section is not displayed.");
+            }
+            
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while validating baggage page: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while validating baggage page.");
+            e.printStackTrace();
+        }
+    }
+/*
+    public void validateBaggage(Map<String, String> fareDetails, ExtentTest test) {
+        try {
+            String CabinBaggage = fareDetails.get("Cabin Baggage");
+            String checkinBaggageRaw = driver.findElement(By.xpath("//*[text()='Check In baggage']/following-sibling::span")).getText();
+            String checkinBaggage = checkinBaggageRaw.split("-")[1].trim();  // Output: "15 KG"
+
+                 System.out.println(checkinBaggage+" "+CabinBaggage);
+            if (checkinBaggage.equalsIgnoreCase(CabinBaggage)) {
+                test.log(Status.PASS, "checkin Baggage matches: " + checkinBaggage);
+            } else {
+                test.log(Status.FAIL, "CheckInBaggage  mismatch. Expected: " + CabinBaggage + ", Found: " + checkinBaggage);
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "CheckInBaggage Not Match", "CheckInBaggage Not Match.");
+            }
+
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while validating CheckInBaggage: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while comparing CheckInBaggage.");
+            e.printStackTrace();
+        }
+    }
+    */
+    /*
+    public void validateBaggage(Map<String, String> fareDetails, ExtentTest test) {
+        try {
+            String expectedWeight = fareDetails.get("Cabin Baggage");  // e.g., "15 KG"
+            String checkinBaggageRaw = driver.findElement(By.xpath("//*[text()='Check In baggage']/following-sibling::span")).getText();
+            // Example: "ADT-15 KG CHD-15 KG INF-0 KG" or "ADT-15 KG CHD-15 KG" or "ADT-15 KG CHD-15 KG INF-5 KG"
+
+            // Split by spaces to separate each segment (assuming format "ADT-15 KG CHD-15 KG INF-0 KG")
+            String[] parts = checkinBaggageRaw.split("\\s+");
+
+            Map<String, String> baggageMap = new HashMap<>();
+
+            for (int i = 0; i < parts.length - 1; i += 2) {
+                String paxAndWeight = parts[i];  // e.g., "ADT-15"
+                System.out.println(paxAndWeight);
+                String kg = parts[i + 1];        // e.g., "KG"
+                System.out.println(kg);
+                String[] paxSplit = paxAndWeight.split("-");
+                if (paxSplit.length == 2) {
+                    String paxType = paxSplit[0];            // e.g., "ADT"
+                    System.out.println(paxType);
+                    String weight = paxSplit[1] + " " + kg; // e.g., "15 KG"
+                    System.out.println(weight);
+                    baggageMap.put(paxType, weight);
+                }
+            }
+
+            boolean allMatch = true;
+
+            // Check Adult baggage
+            String adultWeight = baggageMap.get("ADT");
+            System.out.println(adultWeight);
+            if (adultWeight == null || !adultWeight.equalsIgnoreCase(expectedWeight)) {
+                test.log(Status.FAIL, "Adult baggage mismatch. Expected: " + expectedWeight + ", Found: " + adultWeight);
+                allMatch = false;
+            } else {
+                test.log(Status.PASS, "Adult baggage matches: " + adultWeight);
+            }
+
+            // Check Child baggage
+            String childWeight = baggageMap.get("CHD");
+            if (childWeight == null || !childWeight.equalsIgnoreCase(expectedWeight)) {
+                test.log(Status.FAIL, "Child baggage mismatch. Expected: " + expectedWeight + ", Found: " + childWeight);
+                allMatch = false;
+            } else {
+                test.log(Status.PASS, "Child baggage matches: " + childWeight);
+            }
+
+            // Check Infant baggage - **must be 0 KG or no baggage allowed**
+            String infantWeight = baggageMap.get("INF");
+            System.out.println(infantWeight);
+            if (infantWeight != null && !infantWeight.equalsIgnoreCase("0 KG")) {
+                test.log(Status.FAIL, "Infant baggage NOT allowed but found: " + infantWeight);
+                allMatch = false;
+            } else {
+                test.log(Status.PASS, "Infant baggage correctly not allowed or 0 KG.");
+            }
+
+            if (!allMatch) {
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "CheckInBaggage Not Match", "Baggage weights do not match expected values.");
+                Assert.fail("Baggage weight validation failed.");
+            }
+
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while validating CheckInBaggage: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while comparing CheckInBaggage.");
+            e.printStackTrace();
+            Assert.fail("Exception in validateBaggage: " + e.getMessage());
+        }
+    }
+*/
+    public void validateBaggage(Map<String, String> fareDetails, ExtentTest test) {
+        try {
+            String expectedWeight = fareDetails.get("Cabin Baggage");  // e.g., "15 KG"
+            String checkinBaggageRaw = driver.findElement(By.xpath("//*[text()='Check In baggage']/following-sibling::span")).getText();
+            // Example: "ADT-15 KG CHD-15 KG INF-0 KG" or "ADT-15 KG CHD-15 KG"
+
+            String[] parts = checkinBaggageRaw.split("\\s+");
+            Map<String, String> baggageMap = new HashMap<>();
+
+            for (int i = 0; i < parts.length - 1; i += 2) {
+                String paxAndWeight = parts[i];         // e.g., "ADT-15"
+                String kg = parts[i + 1];               // e.g., "KG"
+                String[] paxSplit = paxAndWeight.split("-");
+                if (paxSplit.length == 2) {
+                    String paxType = paxSplit[0];       // e.g., "ADT"
+                    String weight = paxSplit[1] + " " + kg; // e.g., "15 KG"
+                    baggageMap.put(paxType, weight);
+                }
+            }
+
+            boolean allMatch = true;
+
+            // Validate ADT
+            String adultWeight = baggageMap.get("ADT");
+            if (adultWeight == null || !adultWeight.equalsIgnoreCase(expectedWeight)) {
+                test.log(Status.FAIL, "❌ Adult baggage mismatch. Expected: " + expectedWeight + ", Found: " + adultWeight);
+                allMatch = false;
+            } else {
+                test.log(Status.PASS, "✅ Adult baggage matches: " + adultWeight);
+            }
+
+            // Validate CHD
+            String childWeight = baggageMap.get("CHD");
+            if (childWeight == null || !childWeight.equalsIgnoreCase(expectedWeight)) {
+                test.log(Status.FAIL, "❌ Child baggage mismatch. Expected: " + expectedWeight + ", Found: " + childWeight);
+                allMatch = false;
+            } else {
+                test.log(Status.PASS, "✅ Child baggage matches: " + childWeight);
+            }
+
+            // Validate INF only if present in UI
+            String infantWeight = baggageMap.get("INF");
+            if (infantWeight != null) {
+                if (!infantWeight.equalsIgnoreCase("0 KG")) {
+                    test.log(Status.FAIL, "❌ Infant baggage not allowed. Found: " + infantWeight);
+                    allMatch = false;
+                } else {
+                    test.log(Status.PASS, "✅ Infant baggage correctly set to 0 KG.");
+                }
+            }
+            
+            // Final assertion and screenshot if anything fails
+            if (!allMatch) {
+                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "CheckInBaggage Not Match", "Baggage weights do not match expected values.");
+                Assert.fail("Baggage weight validation failed.");
+            }
+
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Exception occurred while validating CheckInBaggage: " + e.getMessage());
+            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception occurred", "Error while comparing CheckInBaggage.");
+            e.printStackTrace();
+            Assert.fail("Exception in validateBaggage: " + e.getMessage());
+        }
+    }
+
+    
+    
+    public Map<String, String> getFlightDetailsForOneStop() {
+        Map<String, String> flightDetails = new HashMap<>();
+
+        try {
+            flightDetails.put("HeaderDetails", driver.findElement(By.xpath("//div[contains(@class,'selected-flight-details__trip-details')]")).getText());
+            flightDetails.put("FlightName", driver.findElement(By.xpath("//*[@class='primary-color']")).getText());
+            flightDetails.put("FlightCode", driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[1]")).getText());
+            flightDetails.put("BookingClass", driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[2]")).getText());
+            flightDetails.put("Fare", driver.findElement(By.xpath("(//*[@class='primary-color']/parent::div/following-sibling::div)[1]")).getText());
+            flightDetails.put("TravelClass", driver.findElement(By.xpath("(//*[@class='primary-color']/parent::div/following-sibling::div)[2]")).getText());
+            flightDetails.put("Origin", driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[1]")).getText());
+            flightDetails.put("Destination", driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[2]")).getText());
+            flightDetails.put("OriginLocation", driver.findElement(By.xpath("//*[@class='fs-10 mb-2']")).getText());
+            flightDetails.put("DestinationLocation", driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[2]/following-sibling::span")).getText());
+            flightDetails.put("Duration", driver.findElement(By.xpath("//*[@class='fs-12 grey-color mb-2']")).getText());
+            flightDetails.put("Baggage", driver.findElement(By.xpath("//*[@class='selected-flight-details__flight-leg_amenities']/span")).getText());
+
+            
+        //   String orginFlightName= driver.findElement(By.xpath("(//*[@class='primary-color'])[1]")).getText();
+        //  String changeFlightcode= driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[3]")).getText();
+          
+           
+           String fromFlightCode = driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[1]")).getText();
+           String changeFlightcode= driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[3]")).getText();
+           String fromFlightClass=driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[2]")).getText();
+           String toFlightClass=driver.findElement(By.xpath("(//*[@class='primary-color']/following-sibling::span)[4]")).getText();
+           String fromFare=driver.findElement(By.xpath("(//*[@class='primary-color']/parent::div/following-sibling::div)[1]")).getText();
+           String changeFare=driver.findElement(By.xpath("(//*[@class='primary-color']/parent::div/following-sibling::div)[3]")).getText();
+           String travelClass=driver.findElement(By.xpath("((//*[@class='primary-color']/parent::div/following-sibling::div)[2]/span)[1]")).getText();
+           String travelClassNumber=driver.findElement(By.xpath("((//*[@class='primary-color']/parent::div/following-sibling::div)[2]/span)[2]")).getText();
+           String changeTravelClass=driver.findElement(By.xpath("((//*[@class='primary-color']/parent::div/following-sibling::div)[4]/span)[1]")).getText();
+           String changeTravelNumber=driver.findElement(By.xpath("((//*[@class='primary-color']/parent::div/following-sibling::div)[4]/span)[2]")).getText();
+           String orgin=driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[1]")).getText();
+           String Finaldestination =driver.findElement( By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[last()]")).getText();
+           String destination1=driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[2]")).getText();
+           String secondOrgin=driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[3]")).getText();
+           
+           String originLocation=driver.findElement(By.xpath("//*[@class='fs-10 mb-2']")).getText();
+           String secondOrginLocation=driver.findElement(By.xpath("(//*[@class='fs-10 mb-2'])[2]")).getText();
+           
+           String firstDestinationLocation= driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[2]/following-sibling::span")).getText();
+           String finalDestinationLocation=driver.findElement(By.xpath("(//*[@class='dark-grey-color fs-14 fw-600'])[4]/following-sibling::span")).getText();
+           
+           String duration =driver.findElement(By.xpath("//*[@class='fs-12 grey-color mb-2']")).getText();
+           String finalDuration=driver.findElement(By.xpath("(//*[@class='fs-12 grey-color mb-2'])[2]")).getText();
+           
+           String layOverDetails=driver.findElement(By.xpath("//*[@class='selected-flight-details__flight-leg_layover__location ms-1']")).getText();
+           String checkInBaggage=driver.findElement(By.xpath("//*[@class='selected-flight-details__flight-leg_amenities']/span")).getText();
+           
+           
+           
+           
+            
+            
+            
+        } catch (Exception e) {
+            System.out.println("Error while fetching flight details: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        return flightDetails;
+    }
+    
+    
+    public void baggagedeatils()
+    {
+    	String firstBaggageFlightLocation=driver.findElement(By.xpath("(//div[@class='flex-column baggage-table_value_header mb-1'])[1]")).getText();
+    	String secondBaggageFlightLocation=driver.findElement(By.xpath("(//div[@class='flex-column baggage-table_value_header mb-1'])[2]")).getText();
+    	WebElement baggageTable=driver.findElement(By.xpath("//*[@class='baggage-table_value']"));
+    	driver.findElement(By.xpath("(//*[@class='baggage-table_value']/span)[1]")).getText();
+    	driver.findElement(By.xpath("(//*[@class='baggage-table_value']/span)[2]")).getText();
+    }
+    
+    
     }
 

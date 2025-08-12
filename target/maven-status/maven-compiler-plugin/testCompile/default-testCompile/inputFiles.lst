@@ -9,10 +9,12 @@ C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\pageObje
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\pageObjects\resultPage.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\testCases\TCH_01_VerifySearchFunctionalityForHotalForTwoDays.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\utilities\Retry.java
+C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\pageObjects\BookingPage.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\utilities\ExtentReportManager.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\utilities\TestExecutionNotifier.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\utilities\DriverManager.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\utilities\LogSetup.java
+C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\pageObjects\FlightDetailsPage.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\pageObjects\DemoPage.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\pageObjects\searchFlightPage.java
 C:\Users\LENOVO\Downloads\iween-main\iween-main\src\test\java\com\iween\utilities\DataProviders.java

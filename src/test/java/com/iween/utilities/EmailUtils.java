@@ -9,8 +9,8 @@ public class EmailUtils {
 
     private static final String USERNAME = "tarun@tripgain.com";
     private static final String APP_PASSWORD = "wytm cscd ogzq ynen"; // Use Gmail App Password
-    private static final String TO_EMAIL = "rashmitha@tripgain.com";
-
+   // private static final String TO_EMAIL = "rashmitha@tripgain.com";
+    private static final String TO_EMAIL = "prathibha@iweensoft.com";
     public static void sendEmailWithAttachment(String reportPath) {
         File reportFile = new File(reportPath);
 
